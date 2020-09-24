@@ -10,3 +10,4 @@
 
 ### 4. python3 main.py
 
+![screenshot](https://github.com/estrangedwriter/random_password_generator/blob/master/screenshot-(random-pass-generator).png)
