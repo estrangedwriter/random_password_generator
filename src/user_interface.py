@@ -7,24 +7,24 @@ class user_interface:
         frame.pack()
 
         self.labelUpper = Label(frame, text = "How many uppercase letters: ")
-        self.labelUpper.grid(row = 0, column = 0, padx = 10, pady = 10)
+        self.labelUpper.grid(row = 0, column = 0, padx = 10, pady = 10, sticky = E)
         self.entUpper = Entry(frame, width = 22)
-        self.entUpper.grid(row = 0, column = 1, padx = 5, pady = 10, sticky = E)
+        self.entUpper.grid(row = 0, column = 1, padx = 5, pady = 10, sticky = W)
 
         self.labelLower = Label(frame, text = "How many lowercase letters: ")
-        self.labelLower.grid(row = 1, column = 0, padx = 10, pady = 10)
+        self.labelLower.grid(row = 1, column = 0, padx = 10, pady = 10, sticky = E)
         self.entLower = Entry(frame, width = 22)
-        self.entLower.grid(row = 1, column = 1, padx = 5, pady = 10, sticky = E)
+        self.entLower.grid(row = 1, column = 1, padx = 5, pady = 10, sticky = W)
 
         self.labelDigits = Label(frame, text = "How many digits: ")
-        self.labelDigits.grid(row = 2, column = 0, padx = 10, pady = 10)
+        self.labelDigits.grid(row = 2, column = 0, padx = 10, pady = 10, sticky = E)
         self.entDigits = Entry(frame, width = 22)
-        self.entDigits.grid(row = 2, column = 1, padx = 5, pady = 10, sticky = E)
+        self.entDigits.grid(row = 2, column = 1, padx = 5, pady = 10, sticky = W)
 
         self.labelSpecial = Label(frame, text = "How many special characters: ")
-        self.labelSpecial.grid(row = 3, column = 0, padx = 10, pady = 10)
+        self.labelSpecial.grid(row = 3, column = 0, padx = 10, pady = 10, sticky = E)
         self.entSpecial = Entry(frame, width = 22)
-        self.entSpecial.grid(row = 3, column = 1, padx = 5, pady = 10, sticky = E)
+        self.entSpecial.grid(row = 3, column = 1, padx = 5, pady = 10, sticky = W)
 
         self.execute = Button(frame, text = "Generate Password", command = self.genPassword)
         self.execute.grid(row = 4, column = 0, padx = 5, pady = 10)
