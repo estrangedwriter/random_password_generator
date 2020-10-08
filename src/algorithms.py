@@ -5,7 +5,7 @@ class algorithms:
         self.listitems = listitems
         self.password = ""
 
-    def shuffle(self, string):
+    def _shuffle(self, string):
         tempList = list(string)
         random.shuffle(tempList)
         return ''.join(tempList)
@@ -28,6 +28,6 @@ class algorithms:
             self.password = self.password + char
 
         self.password = self.shuffle(self.password)
-        self.shuffle(self.password)
+        
         return self.password
     
