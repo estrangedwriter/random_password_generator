@@ -27,7 +27,7 @@ class algorithms:
             char = chr(random.randint(33,43))
             self.password = self.password + char
 
-        self.password = self.shuffle(self.password)
+        self.password = self._shuffle(self.password)
         
         return self.password
     
